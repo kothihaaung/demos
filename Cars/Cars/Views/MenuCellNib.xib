@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFUIDisplay-Regular.otf">
+            <string>SFUIDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="menuCell" rowHeight="70" id="Fwy-WP-3TY" customClass="MenuCell" customModule="Cars" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="385" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fwy-WP-3TY" id="WKG-1H-ARq">
+                <rect key="frame" x="0.0" y="0.0" width="385" height="69.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hqL-ce-liS">
+                        <rect key="frame" x="10" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="fuS-xa-QMe"/>
+                            <constraint firstAttribute="height" constant="50" id="n2g-Yg-oC9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="os1-e8-Ni4">
+                        <rect key="frame" x="60" y="0.0" width="325" height="69.5"/>
+                        <fontDescription key="fontDescription" name="SFUIDisplay-Regular" family="SF UI Display" pointSize="14"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.25" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="hqL-ce-liS" firstAttribute="leading" secondItem="WKG-1H-ARq" secondAttribute="leading" constant="10" id="18T-Fp-fKR"/>
+                    <constraint firstItem="hqL-ce-liS" firstAttribute="centerY" secondItem="WKG-1H-ARq" secondAttribute="centerY" id="FtH-BR-BJ0"/>
+                    <constraint firstItem="os1-e8-Ni4" firstAttribute="top" secondItem="WKG-1H-ARq" secondAttribute="top" id="Rlv-WX-cDt"/>
+                    <constraint firstAttribute="bottom" secondItem="os1-e8-Ni4" secondAttribute="bottom" id="YCV-mZ-aEx"/>
+                    <constraint firstItem="os1-e8-Ni4" firstAttribute="leading" secondItem="hqL-ce-liS" secondAttribute="trailing" id="uBf-fC-YcP"/>
+                    <constraint firstAttribute="trailing" secondItem="os1-e8-Ni4" secondAttribute="trailing" id="v9e-7N-pv8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="hqL-ce-liS" id="OeR-pd-LBF"/>
+                <outlet property="menuTitle" destination="os1-e8-Ni4" id="Yrw-7W-75G"/>
+            </connections>
+            <point key="canvasLocation" x="-161" y="376"/>
+        </tableViewCell>
+    </objects>
+</document>
