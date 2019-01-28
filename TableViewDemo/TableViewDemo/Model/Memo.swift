@@ -19,4 +19,5 @@ public class Memo {
     var category: MemoCategory?
     var overview: String?
     var detail: String?
+    var showingDetail: Bool? = false
 }
