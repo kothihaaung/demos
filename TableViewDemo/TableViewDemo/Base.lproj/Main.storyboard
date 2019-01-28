@@ -30,16 +30,31 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fnk-Sn-v4D">
-                                                    <rect key="frame" x="15" y="11" width="345" height="105.5"/>
+                                                    <rect key="frame" x="15" y="11" width="345" height="55"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJf-Dt-hhy">
+                                                    <rect key="frame" x="15" y="76" width="345" height="30"/>
+                                                    <color key="backgroundColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="6LC-jW-T2P"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <connections>
+                                                        <action selector="tappedOnDetailButton:" destination="G3k-Qj-Tt5" eventType="touchUpInside" id="5d8-o4-DOL"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="height" secondItem="fnk-Sn-v4D" secondAttribute="height" constant="11" id="D2r-zf-Hra"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="kJf-Dt-hhy" secondAttribute="bottom" id="RNv-GJ-MMU"/>
+                                                <constraint firstItem="kJf-Dt-hhy" firstAttribute="top" secondItem="fnk-Sn-v4D" secondAttribute="bottom" constant="10" id="S4w-3w-acu"/>
+                                                <constraint firstItem="kJf-Dt-hhy" firstAttribute="leading" secondItem="sMw-bY-2Un" secondAttribute="leadingMargin" id="ZrT-qh-SDL"/>
                                                 <constraint firstItem="fnk-Sn-v4D" firstAttribute="leading" secondItem="sMw-bY-2Un" secondAttribute="leadingMargin" id="eCR-Y4-jtf"/>
                                                 <constraint firstItem="fnk-Sn-v4D" firstAttribute="top" secondItem="sMw-bY-2Un" secondAttribute="topMargin" id="gDr-qK-YI5"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="kJf-Dt-hhy" secondAttribute="trailing" id="pFv-vu-4MV"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="fnk-Sn-v4D" secondAttribute="trailing" id="vV1-hn-5pL"/>
                                             </constraints>
                                         </tableViewCellContentView>

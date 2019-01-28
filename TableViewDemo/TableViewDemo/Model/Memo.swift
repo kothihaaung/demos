@@ -14,6 +14,7 @@ public enum MemoCategory {
 
 public class Memo {
     
+    var memoId: String?
     var title :String?
     var category: MemoCategory?
     var overview: String?
