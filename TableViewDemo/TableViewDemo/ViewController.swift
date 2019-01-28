@@ -66,9 +66,13 @@ class ViewController: UIViewController, UITableViewDataSource, MemoCellDelegate 
     
     // Tap on detail button
     func tappedOnDetail(memoId: String, memoCell: MemoCell) {
-        memoCell.memoOverview.text = "26日（土）から27日（日）にかけては、上空に平年よりも6℃から12℃も気温の低い強い寒気が流れ込む。日本付近は強い冬型の気圧配置となるため、日本海側では広く大雪となり、太平洋側でも雪の降る所がありそうだ。特に26日は日本海側だけでなく、太平洋側の山地でも大雪となり、内陸部では平地も含め積雪となるおそれがある。週末の天気　強烈寒気で日本海側は大荒れ　太平洋側で積雪も26日午前10時の雨と風の予想今週末、特に雪の量が多くなりそうなのが北陸や関東甲信の山沿いで、丸2日間で最大で100センチ以上の雪が降る所がある見通し。大雪や路面の凍結による交通障害、電線や樹木への着雪、なだれに注意し、ビニールハウスなどの農業施設の被害にも併せて注意が必要となる。また、カーポートなどの簡易な建築物や老朽化している建築物などは倒壊のおそれがあるため、近寄らないようにしたい。"
-        memoListTableView.beginUpdates()
-        memoListTableView.endUpdates()
+        if let found = dataSource?.first(where: { (memo) -> Bool in
+            return memo.memoId == memoId
+        }) {
+            memoCell.memoOverview.text = found.detail
+            memoListTableView.beginUpdates()
+            memoListTableView.endUpdates()
+        }
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
