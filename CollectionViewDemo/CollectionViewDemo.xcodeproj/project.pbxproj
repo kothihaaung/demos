@@ -12,6 +12,7 @@
 		3BAC3E2922128BE9003749A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAC3E2722128BE9003749A0 /* Main.storyboard */; };
 		3BAC3E2B22128BEC003749A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3BAC3E2A22128BEC003749A0 /* Assets.xcassets */; };
 		3BAC3E2E22128BEC003749A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3BAC3E2C22128BEC003749A0 /* LaunchScreen.storyboard */; };
+		3BAC3E362213F345003749A0 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAC3E352213F345003749A0 /* TransitionAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3BAC3E2A22128BEC003749A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3BAC3E2D22128BEC003749A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3BAC3E2F22128BEC003749A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3BAC3E352213F345003749A0 /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 		3BAC3E2222128BE9003749A0 /* CollectionViewDemo */ = {
 			isa = PBXGroup;
 			children = (
+				3BAC3E352213F345003749A0 /* TransitionAnimator.swift */,
 				3BAC3E2322128BE9003749A0 /* AppDelegate.swift */,
 				3BAC3E2522128BE9003749A0 /* ViewController.swift */,
 				3BAC3E2722128BE9003749A0 /* Main.storyboard */,
@@ -137,6 +140,7 @@
 			files = (
 				3BAC3E2622128BE9003749A0 /* ViewController.swift in Sources */,
 				3BAC3E2422128BE9003749A0 /* AppDelegate.swift in Sources */,
+				3BAC3E362213F345003749A0 /* TransitionAnimator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
