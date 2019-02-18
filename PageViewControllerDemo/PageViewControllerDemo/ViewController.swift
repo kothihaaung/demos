@@ -8,13 +8,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewControllerA: UIViewController {
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
     }
+}
 
+class ViewControllerB: UIViewController {
+    override func viewDidLoad() {
+        
+    }
+}
 
+class ViewControllerC: UIViewController {
+    override func viewDidLoad() {
+        
+    }
 }
 
